@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="stylesheets/extrastyle.css"/>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form name="temp" method="post" action="/">
+      <input type="text" name="degrees" placeholder="ferenhiet"><button type="submit">celsius</button>
+    </form>
+    <% if(scale){ %>
+    <div><%= result %> degrees <%= scale %></div>
+    <% } %>
+  </body>
+</html>
